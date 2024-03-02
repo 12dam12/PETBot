@@ -174,10 +174,18 @@ function Home() {
       <div className="container mt-5">
         <div className="row">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-            <img className="img-fluid" src="all/images/111.png" alt="" />
+            <img
+              className="img-fluid"
+              src="all/images/small_banner2.png"
+              alt=""
+            />
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-            <img className="img-fluid" src="all/images/222.png" alt="" />
+            <img
+              className="img-fluid"
+              src="all/images/small_banner1.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
