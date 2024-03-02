@@ -1,0 +1,400 @@
+/* trên đầu tiên */
+.h-tel a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+.h-petbot {
+  font-weight: 400;
+  color: whitesmoke;
+}
+.h-petbot a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.h-colorcao {
+  background-color: #191919;
+}
+/* end trên đầu tiên */
+
+/* phần header */
+.h-color {
+  background-color: #ffffff;
+}
+.h-logo img {
+  width: 130px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  z-index: 1;
+  list-style-type: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  padding: 10px;
+}
+/* end phần header */
+/* uy tín */
+
+.uytin {
+  text-align: center;
+}
+.box {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  padding: 10px 0px;
+}
+/*end uy tín */
+h5 {
+  color: brown;
+}
+
+/* Loai chai */
+.card-text {
+  text-align: center;
+  font-weight: bold;
+}
+.card-text:hover {
+  color: brown;
+  font-weight: bold;
+}
+.card img:hover {
+  transform: scale(0.8);
+  opacity: 0.8;
+}
+.card img {
+  /* border: 1px solid brown; */
+}
+/* Loai chai */
+
+/* dịch vụ  */
+.dichvu {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  text-align: center;
+  padding: 50px;
+}
+.h-service:hover {
+  background-color: bisque;
+}
+/* dịch vụ  */
+
+/* discount */
+.h-tintuong {
+  text-align: center;
+  background-color: bisque;
+  height: 170px;
+}
+.h-tintuong:hover {
+  background-color: pink;
+}
+/*end discount */
+
+/* 2024 */
+.h-year {
+  text-align: center;
+  font-size: 40px;
+}
+/* 2024 */
+.discount img {
+  width: 460px;
+  height: 150px;
+}
+.h-cart a {
+  text-decoration: none;
+}
+/* header*/
+.h-header {
+  margin-left: 15px;
+}
+.h-header span {
+  font-weight: 600;
+}
+.h-petbot span {
+  font-weight: 600;
+}
+/*header */
+/* register */
+.a-register {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/* end register */
+/* memu */
+.h-menu {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/* detail.jsx */
+
+.d-img {
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+/* categories */
+.card-header a {
+  text-decoration: none;
+}
+.list-menu a {
+  text-decoration: none;
+  font-weight: 500;
+}
+/* footer */
+.f-phone a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+.f-email a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+/* home */
+.h-div-image img {
+  width: 310px;
+  height: 350px;
+}
+.home-div-image img {
+  width: 310px;
+  height: 350px;
+}
+.home-col-box {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/* categories */
+.ca-div-h1 h1 {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  color: burlywood;
+}
+.c-div-image img {
+  width: 310px;
+  height: 350px;
+}
+/* detail */
+.d-div-image img {
+  width: 310px;
+  height: 350px;
+}
+/* gallery */
+.g-div-h1 h1 {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  color: burlywood;
+}
+.g-div-image img {
+  width: 310px;
+  height: 400px;
+}
+.g-div-image img:hover {
+  opacity: 0.9;
+}
+/* contact */
+.c-div-logo img {
+  width: 400px;
+}
+.c-email a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.c-phone a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.c-container-div {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.c-div-h1 h1 {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  color: burlywood;
+}
+/* about */
+
+.about h1 {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  color: burlywood;
+}
+/* feedback */
+
+.f-div-i i {
+  color: gold;
+  font-size: 30px;
+}
+.fb-form {
+  text-align: center;
+}
+.form-group {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: burlywood;
+  margin: auto auto;
+  width: 500px;
+}
+.f-div-i i {
+  margin: 0px 5px;
+}
+.fe-div-ty {
+  text-align: center;
+}
+.fe-nholai {
+  width: 1000px;
+  margin: auto auto;
+}
+/* us */
+/* gallery */
+.gallery-div-a-m a {
+  margin: 5px;
+}
+/* ........................ */
+/* :root {
+  --green: #4da;
+}
+
+.card {
+  margin: 120px auto;
+  width: 320px;
+  height: 400px;
+  background-color: #272d40;
+  border-radius: 15px;
+  padding: 20px;
+  color: aliceblue;
+  position: relative;
+}
+.card_cart,
+.card_heart {
+  font-size: 25px;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+}
+.card_cart {
+  left: unset;
+  right: 25px;
+}
+
+.card_image {
+  transition: 0.5s;
+  width: 60%;
+}
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 40px;
+}
+.card_price,
+.card_title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+}
+.card_title {
+  color: #4da;
+}
+.card_color,
+.card_size {
+  display: flex;
+  align-items: center;
+}
+.card_size span {
+  padding: 1px 5px;
+  background: #dadada;
+  border-radius: 5px;
+  color: black;
+  margin: 0 5px;
+}
+.card_color span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.card_color_green {
+  background: green;
+}
+.card_color_red {
+  background: red;
+}
+.card_color_black {
+  background: black;
+}
+.card_color,
+.card_size {
+  margin-bottom: 10px;
+}
+.card_button button {
+  background: var(--green);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.card:hover .card_image {
+  transform: rotate(-30deg) translateY(-90px);
+}
+
+.card:hover .card_title {
+  transform: translate(-52px, -99px);
+}
+.card:hover .card_price {
+  transform: translate(-120px, -99px);
+}
+.card_size {
+  margin-top: 170px;
+}
+
+.card_size,
+.card_color,
+.card_button {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.card:hover .card_size,
+.card:hover .card_color,
+.card:hover .card_button {
+  visibility: visible;
+  opacity: 10;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.card:hover .card_size {
+  margin-top: -30px;
+} */
+
+/* about */
+.about_h1 h1 {
+  text-align: center;
+}
+.about_color {
+  background: black;
+}
+.about_color_p {
+  color: aliceblue;
+}
+/* menu */
+.menu_button_card {
+  border: none;
+  outline: none;
+
+  border-radius: 50%;
+  font-size: 25px;
+  margin-top: -6px;
+}
+.list-menu li {
+  list-style-type: none;
+}
