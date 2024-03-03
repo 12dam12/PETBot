@@ -33,27 +33,27 @@ function Footer() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
-            <h5 className="text-white text-uppercase mb-4">Our Services</h5>
+            <h5 className="text-white text-uppercase mb-4">Size Map</h5>
             <div className="d-flex flex-column justify-content-start">
               <a className="text-white-50 mb-2" href="/">
                 <i className="fa fa-angle-right mr-2"></i>Home
               </a>
-              <a className="text-white-50 mb-2" href="#">
+              <a className="text-white-50 mb-2" href="/about">
                 <i className="fa fa-angle-right mr-2"></i>About US
               </a>
-              <a className="text-white-50 mb-2" href="#">
+              <a className="text-white-50 mb-2" href="/product">
                 <i className="fa fa-angle-right mr-2"></i>Product
               </a>
               <a className="text-white-50 mb-2" href="#">
                 <i className="fa fa-angle-right mr-2"></i>Categories
               </a>
-              <a className="text-white-50 mb-2" href="#">
+              <a className="text-white-50 mb-2" href="/gallery">
                 <i className="fa fa-angle-right mr-2"></i>Gallery
               </a>
-              <a className="text-white-50 mb-2" href="#">
+              <a className="text-white-50 mb-2" href="/contact">
                 <i className="fa fa-angle-right mr-2"></i>Contact
               </a>
-              <a className="text-white-50" href="#">
+              <a className="text-white-50" href="/feedback">
                 <i className="fa fa-angle-right mr-2"></i>Feedback
               </a>
             </div>
@@ -61,26 +61,20 @@ function Footer() {
           <div className="col-lg-3 col-md-6 mb-5">
             <h5 className="text-white text-uppercase mb-4">Categories</h5>
             <div className="d-flex flex-column justify-content-start">
-              <a className="text-white-50 mb-2" href="#">
-                <i className="fa fa-angle-right mr-2"></i>About
+              <a className="text-white-50 mb-2" href="/categories/1">
+                <i className="fa fa-angle-right mr-2"></i>PET Bottle &
+                Containers
               </a>
-              <a className="text-white-50 mb-2" href="#">
-                <i className="fa fa-angle-right mr-2"></i>Destination
+              <a className="text-white-50 mb-2" href="/categories/2">
+                <i className="fa fa-angle-right mr-2"></i>PP Bottle & Containers
               </a>
-              <a className="text-white-50 mb-2" href="#">
-                <i className="fa fa-angle-right mr-2"></i>Services
+              <a className="text-white-50 mb-2" href="/categories/3">
+                <i className="fa fa-angle-right mr-2"></i>HDPE Bottle &
+                Containers
               </a>
-              <a className="text-white-50 mb-2" href="#">
-                <i className="fa fa-angle-right mr-2"></i>Packages
-              </a>
-              <a className="text-white-50 mb-2" href="#">
-                <i className="fa fa-angle-right mr-2"></i>Guides
-              </a>
-              <a className="text-white-50 mb-2" href="#">
-                <i className="fa fa-angle-right mr-2"></i>Testimonial
-              </a>
-              <a className="text-white-50" href="#">
-                <i className="fa fa-angle-right mr-2"></i>Blog
+              <a className="text-white-50 mb-2" href="/categories/4">
+                <i className="fa fa-angle-right mr-2"></i>GLASS Bottle &
+                Containers
               </a>
             </div>
           </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Banchay from "../Data/Product.json";
-import TypeOfProduct from "../Data/types_of_product.json";
 
 import Product from "../Data/Product.json";
 
@@ -120,23 +119,69 @@ function Home() {
       {/*loại chai  */}
       <div className="container mt-5">
         <div className="row">
-          {TypeOfProduct.map((items) => (
-            <div className="col-md-3 home-col-box">
-              <div className="card home-div-image">
-                {" "}
-                <a href={`/detail/${items.id}`}>
-                  <img
-                    src={items.image}
-                    className="card-img-top img-fluid"
-                    alt="..."
-                  />
-                </a>
-                <div className="">
-                  <p className="card-text">{items.name}</p>
-                </div>
+          <div className="col-md-3 home-col-box">
+            <div className="card home-div-image">
+              {" "}
+              <a href="/categories/1">
+                <img
+                  src="/all/images/pet1.webp"
+                  className="card-img-top img-fluid"
+                  alt="..."
+                />
+              </a>
+              <div className="">
+                <p className="card-text">PET Bottle & Containers</p>
               </div>
             </div>
-          ))}
+          </div>
+
+          <div className="col-md-3 home-col-box">
+            <div className="card home-div-image">
+              {" "}
+              <a href="/categories/2">
+                <img
+                  src="/all/images/pp1.jpg"
+                  className="card-img-top img-fluid"
+                  alt="..."
+                />
+              </a>
+              <div className="">
+                <p className="card-text">PET Bottle & Containers</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3 home-col-box">
+            <div className="card home-div-image">
+              {" "}
+              <a href="/categories/3">
+                <img
+                  src="/all/images/hdpe1.webp"
+                  className="card-img-top img-fluid"
+                  alt="..."
+                />
+              </a>
+              <div className="">
+                <p className="card-text">PET Bottle & Containers</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3 home-col-box">
+            <div className="card home-div-image">
+              {" "}
+              <a href="/categories/4">
+                <img
+                  src="/all/images/glass1.webp"
+                  className="card-img-top img-fluid"
+                  alt="..."
+                />
+              </a>
+              <div className="">
+                <p className="card-text">PET Bottle & Containers</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/*end  loại chai  */}
