@@ -1,6 +1,30 @@
 import React from "react";
+import { useState } from "react";
 
 function Login() {
+  var [namee, setNamee] = useState("");
+  var [password, setPassword] = useState("");
+  var handleNameChangee = (event) => {
+    setNamee(event.target.value);
+  };
+  var handlePasswordChangee = (event) => {
+    setPassword(event.target.value);
+  };
+
+  var handleSubmitt = () => {
+    if (namee === "") {
+      // Hiển thị cửa sổ thông báo nếu tên không được nhập
+      alert("Please enter name");
+      return false;
+    }
+    if (password == "") {
+      alert("Please enter Password");
+      return false;
+    }
+    alert("Welcome to PETBot!");
+    return true;
+  };
+
   return (
     <div>
       <section class="vh-100">
@@ -49,6 +73,8 @@ function Login() {
                     id="form3Example3"
                     class="form-control form-control-lg"
                     placeholder="Enter a valid email address"
+                    required
+                    onChange={handleNameChangee}
                   />
                   <label class="form-label" for="form3Example3">
                     Email address
@@ -61,6 +87,8 @@ function Login() {
                     id="form3Example4"
                     class="form-control form-control-lg"
                     placeholder="Enter password"
+                    required
+                    onChange={handlePasswordChangee}
                   />
                   <label class="form-label" for="form3Example4">
                     Password
@@ -88,6 +116,7 @@ function Login() {
                   <button
                     type="button"
                     class="btn btn-outline-secondary btn-lg"
+                    onClick={handleSubmitt}
                   >
                     Login
                   </button>

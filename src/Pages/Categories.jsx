@@ -50,16 +50,16 @@ function Categories() {
 
                     <ul className="list-menu">
                       <li>
-                        <a href="#"> PETBottle </a>
+                        <a href="/categories/1"> PETBottle </a>
                       </li>
                       <li>
-                        <a href="#"> PC Bottle </a>
+                        <a href="/categories/2"> PC Bottle </a>
                       </li>
                       <li>
-                        <a href="#"> PP Bottle </a>
+                        <a href="/categories/3"> PP Bottle </a>
                       </li>
                       <li>
-                        <a href="#"> HDPE Bottle </a>
+                        <a href="/categories/4"> HDPE Bottle </a>
                       </li>
                     </ul>
                   </div>
@@ -152,14 +152,14 @@ function Categories() {
           <main className="col-md-9">
             <header className="mb-4 pb-3">
               <div className="cate-record mt-3 mb-2 float-start">
-                32 Items found
+                12 Items found
               </div>
-              <select className="cate-filter-select mt-4 mb-2 form-control float-end">
+              {/* <select className="cate-filter-select mt-4 mb-2 form-control float-end">
                 <option>Latest items</option>
                 <option>Trending</option>
                 <option>Most Popular</option>
                 <option>Cheapest</option>
-              </select>
+              </select> */}
             </header>
 
             <div className="clearfix"></div>
@@ -176,12 +176,14 @@ function Categories() {
                     </a>
                     <div className="card-body">
                       <h5 className="card-title">{item.name}</h5>
-                      <p className="card-text"></p>
+                      <p className="card-text"> ${item.new_price}</p>
 
                       <div className="price float-end">
-                        <button className="btn btn-secondary">
-                          ${item.price}
-                        </button>
+                        <a href={`/detail/${item.id}`}>
+                          <button className="btn btn-secondary">
+                            <i class="fas fa-eye"></i> View Detail
+                          </button>
+                        </a>
                       </div>
 
                       <a href="" className="btn btn-secondary">

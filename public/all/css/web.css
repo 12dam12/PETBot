@@ -398,3 +398,20 @@ h5 {
 .list-menu li {
   list-style-type: none;
 }
+/* product */
+.product_h1 {
+  text-align: center;
+  color: burlywood;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+/*  */
+.navbar {
+  display: grid !important;
+  justify-content: space-evenly !important;
+}
+/*  */
+.navbar {
+}
+.nav-item {
+  margin: 0 7px;
+}

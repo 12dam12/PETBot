@@ -7,12 +7,12 @@ function Menu() {
       <div className="h-full-header m-3">
         <header className="container h-menu">
           <div className="row">
-            <div className="h-logo col-md-2">
+            <div className="h-logo col-md-1">
               <div>
                 <img src="all/images/logo.png" alt="" />
               </div>
             </div>
-            <div className="col-md-9 m-div-menu">
+            <div className="col-md-10 m-div-menu">
               <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                   <button
@@ -91,17 +91,6 @@ function Menu() {
                           FEEDBACK
                         </a>
                       </li>
-                      <form class="d-flex" role="search">
-                        <input
-                          class="form-control me-2"
-                          type="search"
-                          placeholder="Search"
-                          aria-label="Search"
-                        />
-                        <button class="btn btn-outline-secondary" type="submit">
-                          Search
-                        </button>
-                      </form>
                     </ul>
                   </div>
                 </div>

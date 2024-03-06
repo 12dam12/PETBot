@@ -35,7 +35,7 @@ function Detail() {
                           <div className="ml-2">
                             {" "}
                             <span>
-                              $<b>{item.new_price}</b>
+                              $<b>{item.new_price} OFF</b>
                             </span>{" "}
                           </div>
                         </div>
@@ -56,12 +56,12 @@ function Detail() {
                         </div>
                         <div className="col">
                           <div className="cart mt-4 align-items-center">
-                            {" "}
-                            <a href="" download="">
+                            <a href={item.file} download>
                               <button className="btn btn-danger text-uppercase mr-2 px-4">
+                                {" "}
                                 Download
                               </button>
-                            </a>{" "}
+                            </a>
                           </div>
                         </div>
                       </div>

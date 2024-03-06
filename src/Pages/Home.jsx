@@ -262,10 +262,10 @@ function Home() {
                 <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
                   <h6 className="text-truncate mb-3">{item.name}</h6>
                   <div className="d-flex justify-content-center">
-                    <h6>{item.price}</h6>
+                    <h6>${item.new_price}</h6>
                     {"     -"}
                     <h6 className="text-muted ml-2">
-                      <del> $914.24</del>
+                      <del>${item.old_price}</del>
                     </h6>
                   </div>
                 </div>

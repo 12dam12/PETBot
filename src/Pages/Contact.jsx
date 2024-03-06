@@ -1,6 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+  var [name, setName] = useState("");
+  var [email, setEmail] = useState("");
+  var [message, setMessage] = useState("");
+
+  var checkEmail = /^[a-zA-Z0-9]{1,20}@[a-z]{2,6}\.[a-z]{2,3}$/;
+
+  var handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  var handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  var handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+  var handleSubmit = () => {
+    if (name === "") {
+      // Hiển thị cửa sổ thông báo nếu tên không được nhập
+      alert("Please enter name");
+      return false;
+    }
+
+    if (!checkEmail.test(email)) {
+      alert("Please enter email xxxxxx@xxx.xx");
+      return false;
+    }
+
+    if (message === "") {
+      alert("Please enter message");
+      return false;
+    }
+    alert("Thank You!");
+    return true;
+  };
+
   return (
     <div>
       <div className="container mt-5 c-div-h1">
@@ -16,6 +53,7 @@ function Contact() {
               id="name"
               name="name"
               required
+              onChange={handleNameChange}
             />
           </div>
           <div className="mb-3">
@@ -28,6 +66,7 @@ function Contact() {
               id="email"
               name="email"
               required
+              onChange={handleEmailChange}
             />
           </div>
           <div className="mb-3">
@@ -40,12 +79,18 @@ function Contact() {
               name="message"
               rows="5"
               required
+              onChange={handleMessageChange}
             ></textarea>
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={handleSubmit}
+          >
             Send Message
           </button>
         </form>
+
         <div className="embed-responsive embed-responsive-16by9 mt-5">
           <iframe
             className="embed-responsive-item"

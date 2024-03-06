@@ -1,6 +1,52 @@
 import React from "react";
+import { useState } from "react";
 
 function Register() {
+  var [namee, setNamee] = useState("");
+  var [emaill, setEmaill] = useState("");
+  var [password, setPassword] = useState("");
+  var [reEnterPassword, setReEnterPassword] = useState("");
+
+  var checkEmaill = /^[a-zA-Z0-9]{1,20}@[a-z]{2,6}\.[a-z]{2,3}$/;
+
+  var handleNameChangee = (event) => {
+    setNamee(event.target.value);
+  };
+
+  var handleEmailChangee = (event) => {
+    setEmaill(event.target.value);
+  };
+
+  var handlePasswordChangee = (event) => {
+    setPassword(event.target.value);
+  };
+
+  var handleRe_EnterPasswordChangee = (event) => {
+    setReEnterPassword(event.target.value);
+  };
+  var handleSubmitt = () => {
+    if (namee === "") {
+      // Hiển thị cửa sổ thông báo nếu tên không được nhập
+      alert("Please enter name");
+      return false;
+    }
+
+    if (!checkEmaill.test(emaill)) {
+      alert("Please enter email");
+      return false;
+    }
+
+    if (password == "" || reEnterPassword == "") {
+      alert("Please enter Password");
+      return false;
+    } else if (password !== reEnterPassword) {
+      alert("Passwords are not the same");
+      return false;
+    }
+
+    alert("Successfully registered account!");
+    return true;
+  };
   return (
     <div>
       <section class="vh-100">
@@ -24,6 +70,8 @@ function Register() {
                               id="form3Example1c"
                               class="form-control"
                               placeholder="Name"
+                              required
+                              onChange={handleNameChangee}
                             />
                             <label class="form-label" for="form3Example1c">
                               Your Name
@@ -39,6 +87,8 @@ function Register() {
                               id="form3Example3c"
                               class="form-control"
                               placeholder="Email"
+                              onChange={handleEmailChangee}
+                              required
                             />
                             <label class="form-label" for="form3Example3c">
                               Your Email
@@ -50,10 +100,12 @@ function Register() {
                           <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input
+                              required
                               type="password"
                               id="form3Example4c"
                               class="form-control"
                               placeholder="Password"
+                              onChange={handlePasswordChangee}
                             />
                             <label class="form-label" for="form3Example4c">
                               Password
@@ -65,10 +117,12 @@ function Register() {
                           <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input
+                              required
                               type="password"
                               id="form3Example4cd"
                               class="form-control"
                               placeholder="Repeat your password"
+                              onChange={handleRe_EnterPasswordChangee}
                             />
                             <label class="form-label" for="form3Example4cd">
                               Repeat your password
@@ -95,6 +149,7 @@ function Register() {
                           <button
                             type="button"
                             class="btn btn-outline-secondary btn-lg"
+                            onClick={handleSubmitt}
                           >
                             Register
                           </button>
