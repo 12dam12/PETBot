@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": " PET Bottle & Containers",
+
+    "describe": "Explore our 250ml Juice Bottle with a 38mm 2-Start neck a versatile choice for juices, smoothies, and teas. Crystal clear, shatter-resistant, and BPA-free, these bottles are perfect for showcasing your product. They're also HPP-compatible, providing a safe and appealing packaging solution",
+    "price": "1234",
+    "image": "/all/images/pet1.webp",
+    "bottle": "PET Bottle & Containers",
+    "old_price": 2000,
+    "new_price": 2001,
+
+    "categories": [
+      {
+        "id": 1,
+        "name": "PET Bottle & Containers"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": " PP Bottle & Containers",
+
+    "describe": "PE/PP Bottle PE46-1000ML Good products for the environment, non-toxic",
+    "price": "1234",
+    "image": "/all/images/pp1.jpg",
+    "bottle": "PP Bottle & Containers",
+    "old_price": 2000,
+    "new_price": 2001,
+
+    "categories": [
+      {
+        "id": 2,
+        "name": "PP Bottle & Containers"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": " HDPE Bottle & Containers",
+
+    "describe": "The 250ml White PET Plastic Bottle & Disc Top Cap has a glossy finish which shimmers in the light.",
+    "price": "1234",
+    "image": "/all/images/hdpe9.webp",
+    "bottle": "HDPE Bottle & Containers",
+    "old_price": 2000,
+    "new_price": 2001,
+
+    "categories": [
+      {
+        "id": 3,
+        "name": "HDPE Bottle & Containers"
+      }
+    ]
+  },
+
+  {
+    "id": 37,
+    "name": " GLASS Bottle & Containers",
+    "describe": "NECK FINISH WITH BLACK PP PLASTIC CONTINUOUS THREAD LINED CLOSURE - F-217 LINER AND LDPE PLASTIC SNAPON FITMENT PLUG ORIFICE REDUCER",
+    "price": "1234",
+    "image": "/all/images/glass1.webp",
+    "bottle": "GLASS Bottle & Containers",
+    "old_price": 2000,
+    "new_price": 2001,
+
+    "categories": [
+      {
+        "id": 4,
+        "name": "GLASS Bottle & Containers"
+      }
+    ]
+  }
+]
