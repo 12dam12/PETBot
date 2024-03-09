@@ -272,7 +272,10 @@ function Home() {
 
                 <div className="card-footer d-flex justify-content-between bg-light border">
                   <button className="btn btn-outline-secondary">
-                    <a className="btn btn-sm text-dark p-0" href="/detail/2">
+                    <a
+                      className="btn btn-sm text-dark p-0"
+                      href={`/detail/${item.id}`}
+                    >
                       <i className="fas fa-eye text-primary mr-1"></i> View
                       Detail
                     </a>
