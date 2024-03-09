@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function checkout() {
+function checkout({ cartItems, deleteCart }) {
   return (
     <div>
       <div>
@@ -9,58 +10,62 @@ function checkout() {
             <thead>
               <tr></tr>
             </thead>
+
             <tbody>
-              <tr>
-                <td data-th="Product-checkout">
-                  <div className="row">
-                    <div className="col-sm-2 hidden-xs">
-                      <img
-                        src="assets/image/product_1.png"
-                        className="img-fluid"
+              {cartItems.map((item) => (
+                <tr>
+                  <td data-th="Product-checkout">
+                    <div className="row">
+                      <div className="col-sm-2 hidden-xs">
+                        <img src={item.image} className="img-fluid" />
+                      </div>
+                      <div className="col-sm-10">
+                        <h4 className="nomargin">{item.name}</h4>
+                        <p>{item.describe}</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td data-th="Price">${item.new_price}</td>
+                  <td data-th="Quantity">
+                    <div className="input-group quantity mx-auto">
+                      <div className="input-group-btn">
+                        <button className="btn btn-sm btn-primary btn-minus">
+                          <i className="fa fa-minus"></i>
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control form-control-sm bg-secondary text-center"
+                        value={item.quantity}
                       />
+                      <div className="input-group-btn">
+                        <button className="btn btn-sm btn-primary btn-plus">
+                          <i className="fa fa-plus"></i>
+                        </button>
+                      </div>
                     </div>
-                    <div className="col-sm-10">
-                      <h4 className="nomargin">Product 1</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </td>
-                <td data-th="Price">$5.11</td>
-                <td data-th="Quantity">
-                  <input
-                    type="number"
-                    className="form-control text-center"
-                    value="1"
-                  />
-                </td>
-                <td data-th="Subtotal" className="text-center">
-                  $5.11
-                </td>
-                <td className="actions" data-th="">
-                  <button className="btn btn-info btn-sm">
-                    <i className="fa fa-refresh"></i>
-                  </button>
-                  <button className="btn btn-danger btn-sm">
-                    <i className="fa fa-trash-o"></i>
-                  </button>
-                </td>
-              </tr>
+                  </td>
+                  <td data-th="Subtotal" className="text-center">
+                    ${item.quantity * item.new_price}
+                  </td>
+                  <td className="actions" data-th="">
+                    <button
+                      className="btn btn-danger btn-sm"
+                      onClick={() => deleteCart(item)}
+                    >
+                      <i className="fa fa-trash-o"></i>Delete
+                    </button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
+
             <tfoot>
-              <tr className="visible-xs">
-                <td className="text-center">
-                  <strong>Total $ 5.11</strong>
-                </td>
-              </tr>
               <tr>
                 <td>
-                  <a href="#" className="btn btn-warning">
+                  <Link to={`/`} className="btn btn-warning">
                     <i className="fa fa-angle-left"></i> Continue Shopping
-                  </a>
+                  </Link>
                 </td>
                 <td colspan="2" className="hidden-xs"></td>
                 <td className="hidden-xs text-center">

@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Product from "../Data/Product.json";
+import Category from "../Data/Categories.json";
 import { useParams } from "react-router-dom";
 
 function Categories() {
   var { id } = useParams();
 
   var sanpham = Product.filter((items) => items.categories[0].id == id);
+  // phaan trang
+  const [currentPage, setCurrentPage] = useState(1); //so trang ban dau mac dinh la 1
+  const recordsPerPage = 6; //so san pham tren 1 trang
+  const lastIndex = currentPage * recordsPerPage; //trang cuoi dung
+  const firstIndex = lastIndex - recordsPerPage; //trang dau tien
+  const records = sanpham.slice(firstIndex, lastIndex); //tong dong du lieu
+  const npage = Math.ceil(sanpham.length / recordsPerPage); //so trang
+  const numbers = [...Array(npage + 1).keys()].slice(1);
   return (
     <div classNameName="c-categories">
       <div className="container py-3">
@@ -49,18 +58,11 @@ function Categories() {
                     </form>
 
                     <ul className="list-menu">
-                      <li>
-                        <a href="/categories/1"> PETBottle </a>
-                      </li>
-                      <li>
-                        <a href="/categories/2"> PC Bottle </a>
-                      </li>
-                      <li>
-                        <a href="/categories/3"> PP Bottle </a>
-                      </li>
-                      <li>
-                        <a href="/categories/4"> HDPE Bottle </a>
-                      </li>
+                      {Category.map((item) => (
+                        <li>
+                          <a href={`/categories/${item.id}`}>{item.name} </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -164,7 +166,7 @@ function Categories() {
 
             <div className="clearfix"></div>
             <div className="row">
-              {sanpham.map((item) => (
+              {records.map((item) => (
                 <div className="col-md-4 mt-3">
                   <div className="card card-home c-div-image">
                     <a href={`/detail/${item.id}`}>
@@ -196,30 +198,30 @@ function Categories() {
             </div>
 
             <nav className="mt-4" aria-label="Page navigation sample">
-              <ul className="pagination">
-                <li className="page-item disabled">
-                  <a className="page-link" href="#">
-                    Previous
-                  </a>
-                </li>
-                <li className="page-item active">
-                  <a className="page-link" href="#">
-                    1
-                  </a>
-                </li>
+              <ul className="pagination mt-4">
                 <li className="page-item">
-                  <a className="page-link" href="#">
-                    2
+                  <a href="#" className="page-link" onClick={prePage}>
+                    Prev
                   </a>
                 </li>
+                {numbers.map((n, i) => (
+                  <li
+                    className={`page-item ${currentPage === n ? "active" : ""}`}
+                    key={i}
+                  >
+                    {" "}
+                    <a
+                      href="#"
+                      className="page-link"
+                      onClick={() => changeCPage(n)}
+                    >
+                      {n}
+                    </a>
+                  </li>
+                ))}
                 <li className="page-item">
-                  <a className="page-link" href="#">
-                    3
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">
-                    Next
+                  <a href="#" className="page-link" onClick={nextPage}>
+                    Prev
                   </a>
                 </li>
               </ul>
@@ -229,6 +231,21 @@ function Categories() {
       </div>
     </div>
   );
+  function prePage() {
+    if (currentPage !== 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  }
+  //ham cac trang
+  function changeCPage(id) {
+    setCurrentPage(id);
+  }
+  //ham trang tiep theo
+  function nextPage() {
+    if (currentPage !== npage) {
+      setCurrentPage(currentPage + 1);
+    }
+  }
 }
 
 export default Categories;

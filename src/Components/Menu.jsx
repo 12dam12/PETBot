@@ -1,5 +1,6 @@
 import React from "react";
 import DataCategories from "../Data/Categories.json";
+import { Link } from "react-router-dom";
 
 function Menu() {
   return (
@@ -99,12 +100,12 @@ function Menu() {
 
             <div className="h-cart col-md-1 mt-3 float-end">
               <div>
-                <a class="" href="/checkout">
+                <Link to={`/checkout`}>
                   <button className="menu_button_card">
                     <i class="fas fa-shopping-cart text-primary"></i>
                   </button>
                   <span class="badge">0</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

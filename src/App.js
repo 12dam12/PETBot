@@ -13,16 +13,41 @@ import Detail from "./Pages/Detail";
 import Categories from "./Pages/Categories";
 import Feedback from "./Pages/Feedback";
 import Checkout from "./Pages/Checkout";
+import { useState } from "react";
 
 function App() {
+  //add cart
+  const [cartItems, setCartItems] = useState([]);
+  const handleAdd = (product) => {
+    const ProductExits = cartItems.find((item) => item.id === product.id);
+    if (ProductExits) {
+      setCartItems(
+        cartItems.map((item) =>
+          item.id === product.id
+            ? { ...ProductExits, quantity: ProductExits.quantity + 1 }
+            : item
+        )
+      );
+    } else {
+      setCartItems([...cartItems, { ...product, quantity: 1 }]);
+    }
+    alert("Add cart Success");
+  };
+
+  const deleteCart = (GFGCourse) => {
+    const updatedCart = cartItems.filter((item) => item.id !== GFGCourse.id);
+    setCartItems(updatedCart);
+    alert("Delete cart success!");
+  };
+
   return (
     <div>
-      <Header />
-      <Menu />
-
       <BrowserRouter>
+        <Header />
+        <Menu />
+
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home handleAdd={handleAdd} />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
@@ -32,10 +57,15 @@ function App() {
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/categories/:id" element={<Categories />} />
           <Route path="/feedback" element={<Feedback />} />
-          <Route path="/checkout" element={<Checkout />} />
+
+          <Route
+            path="/checkout"
+            element={<Checkout cartItems={cartItems} deleteCart={deleteCart} />}
+          />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

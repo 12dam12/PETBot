@@ -3,7 +3,7 @@ import Banchay from "../Data/Product.json";
 
 import Product from "../Data/Product.json";
 
-function Home() {
+function Home({ handleAdd }) {
   var limitdata = Banchay.slice(0, 12);
   return (
     <div>
@@ -284,6 +284,7 @@ function Home() {
                   <button
                     className="btn btn-outline-secondary p-0"
                     type="button"
+                    onClick={() => handleAdd(item)}
                   >
                     <i className="fas fa-shopping-cart text-primary mr-1"></i>{" "}
                     Add To Cart
