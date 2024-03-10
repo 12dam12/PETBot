@@ -21,6 +21,8 @@
     <h1>Built With</h1>
   <p> Below is the languages/libraries we used for this project:</p>
 </div>
+![html-css-js-b-react](https://github.com/12dam12/PETBot/assets/162801115/539a199a-cb94-4882-aa61-22941bd61ae7)
+
 
 
   
