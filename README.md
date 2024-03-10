@@ -25,7 +25,7 @@
 <img width="703" alt="" src="https://github.com/12dam12/PETBot/assets/162801115/7e25e45f-d17c-4e49-bd18-1b886bcd7c40">
 </div>
 
-##Features
+## Features
 1.	The Home Page should be created making use of Sections with a suitable logo, the header section can be added which will show images of various bottles.
 2.	The site must contain the links to navigate through any category for the information.
 3.	Links of bottles can be categorized like (Bottles, Jars, etc.) 
@@ -37,7 +37,14 @@
 9.	The advertise section with various facilities provided should be mentioned.
 10.	There should be a “Contact Us” page which will have the Address of the Company which is as follows and the mail address which when clicked will invoke the local mail client from where they can send an email. Address of the Company should be displayed using GeoLocation API (eg. GoogleMaps).
 
+# Members of group
+## Leader : Võ Nhật Đảm<div style="border: 1px solid black; border-radius: 10px; padding: 10px;"><p>Student1513375 </p>
+</div>
 
-
+### Members: 
+Phan Đăng Hà: Student1528052
+Trần Công Nghĩa:Student1526168
+Phạm Thiên An: Student1526150
+Nguyễn Thành Công: Student1526153
   
 
