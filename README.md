@@ -5,5 +5,5 @@
 
 
 
-   PETBot
-  Welcome to PETBot - one of the leading enterprises specializing in manufacturing, supplying and exporting a wide range of PET/PP/PC bottles. We are proud to be a company with a leading modern PET bottle factory.
+   PETBot 
+   Welcome to PETBot - one of the leading enterprises specializing in manufacturing, supplying and exporting a wide range of PET/PP/PC bottles. We are proud to be a company with a leading modern PET bottle factory.
