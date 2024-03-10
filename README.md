@@ -11,6 +11,10 @@
   <a href="https://github.com/12dam12/PETBot">Explore the source »</a>
    <a href="https://github.com/12dam12/PETBot/tree/main/Document"> Explore the documents »»</a>
 </div>
+<div align="center">
+  <a href="https://petbot-group3.onrender.com/">View Demo »</a>
+   <a href="#">Video»»</a>
+</div>
 
 
 
