@@ -1,5 +1,5 @@
 
-<img width="703" alt="logo" src="https://github.com/12dam12/PETBot/assets/162801115/31148701-42cb-4430-89bb-6af31d3ad5b6">
+<img width="500" alt="logo" src="https://github.com/12dam12/PETBot/assets/162801115/31148701-42cb-4430-89bb-6af31d3ad5b6">
                                              PETBot
 Welcome to PETBot - one of the leading enterprises specializing in manufacturing, supplying and exporting a wide range of PET/PP/PC bottles. We are proud to be a company with a leading modern PET bottle factory.
 
