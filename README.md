@@ -38,13 +38,12 @@
 10.	There should be a “Contact Us” page which will have the Address of the Company which is as follows and the mail address which when clicked will invoke the local mail client from where they can send an email. Address of the Company should be displayed using GeoLocation API (eg. GoogleMaps).
 
 # Members of group
-## Leader : Võ Nhật Đảm<div style="border: 1px solid black; border-radius: 10px; padding: 10px;"><p>Student1513375 </p>
-</div>
+## Leader : Võ Nhật Đảm: Student1513375
 
 ### Members: 
-Phan Đăng Hà: Student1528052
-Trần Công Nghĩa:Student1526168
-Phạm Thiên An: Student1526150
-Nguyễn Thành Công: Student1526153
+#### Phan Đăng Hà: Student1528052
+#### Trần Công Nghĩa: Student1526168
+#### Phạm Thiên An: Student1526150
+#### Nguyễn Thành Công: Student1526153
   
 
