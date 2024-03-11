@@ -13,7 +13,7 @@
    <a href="https://github.com/12dam12/PETBot/tree/main/Document"> Explore the documents »»</a>
 </div>
 <div align="center">
-  <a href="https://petbot-group3.onrender.com/">View Demo »</a>
+  <a href="[https://petbot-group3.onrender.com/](https://petbot-group-3.onrender.com/)">View Demo »</a>
    <a href="https://youtu.be/BREDqdDYGtY?si=wZg65Zh8ja8rxauv">Video»»</a>
 </div>
  
