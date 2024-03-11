@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-[Explore the source »](https://github.com/12dam12/PETBot)
-=======
+
 <div align="center">
 <img width="703" alt="logo" src="https://github.com/12dam12/PETBot/assets/162801115/1da9ee9f-4f6d-4e34-bbf6-3cf1704bad06">
   
