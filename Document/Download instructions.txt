@@ -1,0 +1,34 @@
+Guide to Download and Run Source Code from GitHub
+When downloading source code from GitHub and setting up the development environment, please follow these steps:
+
+1. Download Source Code from GitHub:
+First, access the project's repository on GitHub at [link_repository].
+Click on the "Code" button and choose the download method, for example "Download ZIP," or copy the URL of the repository to use with Git.
+2. Unzip (If Using Download ZIP):
+After downloading, unzip the ZIP file into the desired directory on your computer.
+3. Install Node Modules (If Needed):
+Ensure you have Node.js and npm installed on your computer.
+Open a terminal or command prompt and navigate to the directory containing the source code.
+Run the following command to install necessary dependencies:
+bash
+
+npm install react-scripts
+
+
+4. Run the Application:
+Once the necessary node modules are successfully installed, you can run the application using the command:
+bash
+
+
+npm start
+
+
+
+This command will start a local development server and open the application in your default browser.
+Notes:
+In case the repository does not include the "node_modules" directory, make sure you have installed the necessary packages using the npm install command or use a platform like Vercel to manage dependencies.
+
+If you encounter any issues during the installation or running of the application, refer to the [link_documentation] section for more detailed information or contact the development team.
+
+Best of luck!
+

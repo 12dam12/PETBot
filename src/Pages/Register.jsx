@@ -74,7 +74,7 @@ function Register() {
                               onChange={handleNameChangee}
                             />
                             <label class="form-label" for="form3Example1c">
-                              Your Name
+                              Your Name:
                             </label>
                           </div>
                         </div>
@@ -91,7 +91,7 @@ function Register() {
                               required
                             />
                             <label class="form-label" for="form3Example3c">
-                              Your Email
+                              Your Email:
                             </label>
                           </div>
                         </div>
