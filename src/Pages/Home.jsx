@@ -147,7 +147,7 @@ function Home({ handleAdd }) {
                 />
               </Link>
               <div className="">
-                <p className="card-text">PET Bottle & Containers</p>
+                <p className="card-text">PP Bottle & Containers</p>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ function Home({ handleAdd }) {
                 />
               </Link>
               <div className="">
-                <p className="card-text">PET Bottle & Containers</p>
+                <p className="card-text">HDPE Bottle & Containers</p>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@ function Home({ handleAdd }) {
                 />
               </Link>
               <div className="">
-                <p className="card-text">PET Bottle & Containers</p>
+                <p className="card-text">GLASS Bottle & Containers</p>
               </div>
             </div>
           </div>
